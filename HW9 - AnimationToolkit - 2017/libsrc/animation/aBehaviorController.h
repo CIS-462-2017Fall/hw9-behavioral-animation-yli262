@@ -163,7 +163,7 @@ public:
     //Velocity controller gains: force = m * Kv * (Vd - V)
     static double gVelKv;  // Velocity Kv gain
 
-    //Heading controller gains: torque = I * ( -Kv * thetaDot - Kp * theta + Kp * thetad)
+    //Heading controller gains: torque = I * ( -Kv * thetaDot + Kp * theta + Kp * thetad)
     static double gOriKv;  // Orientation Kv gain
     static double gOriKp;  // Orientation Kp gain
 

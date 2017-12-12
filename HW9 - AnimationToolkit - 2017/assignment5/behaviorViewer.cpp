@@ -84,6 +84,12 @@ void BehaviorViewer::initializeGui()
 	TwAddButton(m_TwBehaviorBar, "Reset", onResetCb, this, "");
 
 	//TODO: Add your code here to create additional GUI Variables
+	TwAddVarRW(m_TwBehaviorBar, "Mass", TW_TYPE_INT32, &BehaviorController::gMass, "");
+	TwAddVarRW(m_TwBehaviorBar, "Inertia", TW_TYPE_INT32, &BehaviorController::gInertia, "");
+	TwAddVarRW(m_TwBehaviorBar, "Arrival", TW_TYPE_DOUBLE, &BehaviorController::KArrival, "");
+	TwAddVarRW(m_TwBehaviorBar, "Departure", TW_TYPE_DOUBLE, &BehaviorController::KDeparture, "");
+	TwAddVarRW(m_TwBehaviorBar, "Noise", TW_TYPE_DOUBLE, &BehaviorController::KNoise, "");
+	TwAddVarRW(m_TwBehaviorBar, "Wander", TW_TYPE_DOUBLE, &BehaviorController::KWander, "");
 }
 
 
