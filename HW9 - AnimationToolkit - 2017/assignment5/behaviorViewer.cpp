@@ -90,6 +90,8 @@ void BehaviorViewer::initializeGui()
 	TwAddVarRW(m_TwBehaviorBar, "Departure", TW_TYPE_DOUBLE, &BehaviorController::KDeparture, "");
 	TwAddVarRW(m_TwBehaviorBar, "Noise", TW_TYPE_DOUBLE, &BehaviorController::KNoise, "");
 	TwAddVarRW(m_TwBehaviorBar, "Wander", TW_TYPE_DOUBLE, &BehaviorController::KWander, "");
+	TwAddVarRW(m_TwBehaviorBar, "TAvoid", TW_TYPE_DOUBLE, &BehaviorController::TAvoid, "");
+	TwAddVarRW(m_TwBehaviorBar, "KAvoid", TW_TYPE_DOUBLE, &BehaviorController::KAvoid, "");
 }
 
 
